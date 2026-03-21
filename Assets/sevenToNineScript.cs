@@ -120,6 +120,7 @@ public class sevenToNineScript : MonoBehaviour {
 		}
 		if (pressedYes == answers[stage]) proceedStage();
 		else GetComponent<KMBombModule>().HandleStrike();
+		pressedYes=0;
 	}
 	
 	void Awake() { ModuleId = ModuleIdCounter++; }
